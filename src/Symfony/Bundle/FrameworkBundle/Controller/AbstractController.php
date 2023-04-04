@@ -64,7 +64,7 @@ abstract class AbstractController implements ServiceSubscriberInterface
     /**
      * @required
      */
-    public function setContainer(ContainerInterface $container): ?ContainerInterface
+    public function setContainer(ContainerInterface $container = null): ?ContainerInterface
     {
         $previous = $this->container;
         $this->container = $container;
